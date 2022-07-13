@@ -10,7 +10,7 @@ repository = "https://github.com/checktheroads/jollyip"
 keywords = ["networking", "ping", "icmp", "command line", "cli"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 click = "^7.0"
 rich = "^0.3.3"
 icmplib = "^1.0.2"
@@ -18,6 +18,8 @@ icmplib = "^1.0.2"
 [tool.poetry.dev-dependencies]
 stackprinter = "^0.2.3"
 devtools = {extras = ["pygments"], version = "^0.5.1"}
+pytest = "^7.1.2"
+flake8 = "^4.0.1"
 
 [tool.poetry.scripts]
 jollyip = "jollyip.cli:run_ping"
